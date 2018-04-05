@@ -2,11 +2,10 @@ const UtfString = require('utfstring');
 const lookupTable = require('./homoglyph-lookup-table').fullLookupTable;
 
 function decimalToHexString(n) {
-  let i;
   if (n < 0) {
-    i = 0xFFFFFFFF + n + 1;
+    n = 0xFFFFFFFF + n + 1;
   }
-  return i.toString(16).toUpperCase();
+  return n.toString(16).toUpperCase();
 }
 
 function isNumeric(n) {
