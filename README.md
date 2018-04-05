@@ -9,9 +9,19 @@ A small library that adds sanitizes homoglyph ridden JSON and strings
 
 ## Usage
 
-    const deHomoglyph = require('de-homoglyph').deHomoglyph;
+    const deglyph = require('de-homoglyph');
+
     const badText = "Ѕuprеmе®/Thе North Fаcе® Mеtаllic Mountаin Βib";
-    deHomoglyph(badText);
+    (view the source for this page if you think that that uses basic latin glyphs...)
+
+    deglyph.deHomoglyph(badText);
+
+Output should be `Supreme®/The North Face® Metallic Mountain Bib`
+
+    deHomoglyphJSON expects a valid JSON object
+    const badJSON = {'tryingtobeclever': badText}
+    deglyph.deHomoglyphJSON(json)
     
-  Output should be `Supreme®/The North Face® Metallic Mountain Bib`
+Output should be `{ 'tryingtobeclever': 'Supreme®/The North Face® Metallic Mountain Bib' }`
+  
 
