@@ -1,0 +1,42 @@
+{
+  "name": "de-homoglyph",
+  "version": "0.1.0",
+  "description": "Sanitize homoglyph ridden text and JSON",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "James Baker",
+  "license": "MIT",
+  "dependencies": {
+    "utf8": "^3.0.0",
+    "utfstring": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.7.6",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-syntax-async-functions": "^6.5.0",
+    "babel-plugin-transform-async-to-generator": "^6.7.4",
+    "babel-plugin-transform-object-rest-spread": "^6.6.5",
+    "babel-plugin-transform-runtime": "^6.7.5",
+    "babel-preset-airbnb": "^2.4.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Omgitsu/de-homoglyph.git"
+  },
+  "keywords": [
+    "homoglyph"
+  ],
+  "bugs": {
+    "url": "https://github.com/Omgitsu/de-homoglyph/issues"
+  },
+  "homepage": "https://github.com/Omgitsu/de-homoglyph#readme"
+}
